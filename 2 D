@@ -1,0 +1,12 @@
+import numpy as np
+arr = np.random.randint(10, 100, 24)
+arr_2d = arr.reshape(4, 6)
+print("2D Array:\n", arr_2d)
+row_sum = arr_2d.sum(axis=1)
+col_sum = arr_2d.sum(axis=0)
+print("Row-wise Sum:", row_sum)
+print("Column-wise Sum:", col_sum)
+even_numbers = arr_2d[arr_2d % 2 == 0]
+print("Even Numbers:", even_numbers)
+flattened = arr_2d.flatten()
+print("Flattened Array:", flattened)
